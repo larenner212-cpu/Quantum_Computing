@@ -1,0 +1,7 @@
+from qiskit import *
+
+# Create a 2-qubit circuit
+circ = QuantumCircuit(2)
+circ.h(0)
+
+print(circ.draw())

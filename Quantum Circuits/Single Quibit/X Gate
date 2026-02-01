@@ -1,0 +1,8 @@
+from qiskit import *
+
+# Create a 2-qubit circuit with an X gate
+circ = QuantumCircuit(2)
+# Apply X gate on qubit 0
+circ.x(0)
+
+print(circ.draw())

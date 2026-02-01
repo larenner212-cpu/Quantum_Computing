@@ -1,0 +1,12 @@
+from qiskit import *
+
+# Create a 3-qubit circuit for GHZ state
+Circuit = QuantumCircuit(3)
+# Apply Hadamard gate on qubit 0
+Circuit.h(0)
+# Apply CNOT gate between qubit 0 (control) and qubit 1 (target)
+Circuit.cx(0,1)
+# Apply CNOT gate between qubit 0 (control) and qubit 2 (target)
+Circuit.cx(0,2)
+# Draw the circuit
+print(Circuit.draw())

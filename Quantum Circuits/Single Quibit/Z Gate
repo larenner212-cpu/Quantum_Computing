@@ -1,0 +1,6 @@
+from qiskit import *
+
+circ = QuantumCircuit(2)
+circ.z(0)
+
+print(circ.draw())

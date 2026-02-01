@@ -1,0 +1,8 @@
+from qiskit import *
+
+# Create a 2-qubit circuit with a CX gate
+circ = QuantumCircuit(2)
+# Apply CX gate between qubit 0 (control) and qubit 1 (target)
+circ.cx(0,1)
+# Draw the circuit
+print(circ.draw())
